@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning Forms</title>
+    </head>
+
+    <body>
+
+        <form>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username" minlength="3" maxlength="20" required><br><br>
+
+            <label for="mobile">Phone:</label>
+            <input type="tel" id="mobile" placeholder="+91 ##### #####" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter your age" min="0" required><br><br>
+
+            <label for="gender">Gender:</label><br>
+
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required><br><br>
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="example@gmail.com" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" minlength="6" maxlength="10" required><br><br>
+
+            <label for="payment">Payment Method:</label>
+            <select id="payment" required>
+                <option value="">Select a payment method</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="paypal">PayPal</option>
+            </select><br><br>
+
+            <label for="terms">I agree to the terms and conditions:</label>
+            <input type="checkbox" id="terms" required><br><br>
+
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" rows="4" cols="50" placeholder="Enter your feedback here..."></textarea><br><br>
+
+            <label for="file">upload proof:</label>
+            <input type="file" id="file" required><br><br>
+
+            <input type="reset"><br><br>
+            <input type="submit" value="Submit">
+
+        </form>
+
+
+    </body>
+</html>
